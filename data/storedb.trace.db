@@ -1,0 +1,42 @@
+2022-09-12 23:14:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "OWNER" not found (this database is empty); SQL statement:
+select owner0_.owner_id as owner_id1_4_, owner0_.email as email2_4_, owner0_.first_name as first_na3_4_, owner0_.last_name as last_nam4_4_, owner0_.password as password5_4_, owner0_.user_name as user_nam6_4_ from owner owner0_ [42104-214]
+2022-09-13 05:42:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BORROWER" not found (this database is empty); SQL statement:
+select borrower0_.borrower_id as borrower1_0_, borrower0_.email as email2_0_, borrower0_.first_name as first_na3_0_, borrower0_.last_name as last_nam4_0_, borrower0_.password as password5_0_, borrower0_.roles as roles6_0_, borrower0_.user_name as user_nam7_0_ from borrower borrower0_ [42104-214]
+2022-09-13 05:42:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BORROWER" not found (this database is empty); SQL statement:
+select borrower0_.borrower_id as borrower1_0_, borrower0_.email as email2_0_, borrower0_.first_name as first_na3_0_, borrower0_.last_name as last_nam4_0_, borrower0_.password as password5_0_, borrower0_.roles as roles6_0_, borrower0_.user_name as user_nam7_0_ from borrower borrower0_ [42104-214]
+2022-09-13 05:43:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEM" not found (this database is empty); SQL statement:
+select item0_.item_id as item_id1_3_, item0_.availabality as availaba2_3_, item0_.description as descript3_3_, item0_.photo_url as photo_ur4_3_ from item item0_ [42104-214]
+2022-09-13 05:43:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEM" not found (this database is empty); SQL statement:
+select item0_.item_id as item_id1_3_, item0_.availabality as availaba2_3_, item0_.description as descript3_3_, item0_.photo_url as photo_ur4_3_ from item item0_ [42104-214]
+2022-09-13 06:24:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BORROWER" not found (this database is empty); SQL statement:
+select borrower0_.borrower_id as borrower1_0_, borrower0_.email as email2_0_, borrower0_.first_name as first_na3_0_, borrower0_.last_name as last_nam4_0_, borrower0_.password as password5_0_, borrower0_.roles as roles6_0_, borrower0_.user_name as user_nam7_0_ from borrower borrower0_ [42104-214]
+2022-09-13 06:26:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BORROWER" not found (this database is empty); SQL statement:
+select borrower0_.borrower_id as borrower1_0_0_, borrower0_.email as email2_0_0_, borrower0_.first_name as first_na3_0_0_, borrower0_.last_name as last_nam4_0_0_, borrower0_.password as password5_0_0_, borrower0_.roles as roles6_0_0_, borrower0_.user_name as user_nam7_0_0_ from borrower borrower0_ where borrower0_.borrower_id=? [42104-214]
+2022-09-13 06:58:59 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BORROWER" not found (this database is empty); SQL statement:
+select borrower0_.borrower_id as borrower1_0_, borrower0_.email as email2_0_, borrower0_.first_name as first_na3_0_, borrower0_.last_name as last_nam4_0_, borrower0_.password as password5_0_, borrower0_.user_name as user_nam6_0_ from borrower borrower0_ [42104-214]
+2022-09-13 23:20:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select user0_.user_name as user_nam1_9_0_, user0_.user_first_name as user_fir2_9_0_, user0_.user_last_name as user_las3_9_0_, user0_.user_password as user_pas4_9_0_, role1_.user_id as user_id1_10_1_, role2_.role_name as role_id2_10_1_, role2_.role_name as role_nam1_8_2_, role2_.role_description as role_des2_8_2_ from [*]user user0_ left outer join user_role role1_ on user0_.user_name=role1_.user_id left outer join role role2_ on role1_.role_id=role2_.role_name where user0_.user_name=?"; expected "identifier"; SQL statement:
+select user0_.user_name as user_nam1_9_0_, user0_.user_first_name as user_fir2_9_0_, user0_.user_last_name as user_las3_9_0_, user0_.user_password as user_pas4_9_0_, role1_.user_id as user_id1_10_1_, role2_.role_name as role_id2_10_1_, role2_.role_name as role_nam1_8_2_, role2_.role_description as role_des2_8_2_ from user user0_ left outer join user_role role1_ on user0_.user_name=role1_.user_id left outer join role role2_ on role1_.role_id=role2_.role_name where user0_.user_name=? [42001-214]
+2022-09-14 01:02:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select user0_.user_name as user_nam1_9_0_, user0_.user_first_name as user_fir2_9_0_, user0_.user_last_name as user_las3_9_0_, user0_.user_password as user_pas4_9_0_, role1_.user_id as user_id1_10_1_, role2_.role_name as role_id2_10_1_, role2_.role_name as role_nam1_8_2_, role2_.role_description as role_des2_8_2_ from [*]user user0_ left outer join user_role role1_ on user0_.user_name=role1_.user_id left outer join role role2_ on role1_.role_id=role2_.role_name where user0_.user_name=?"; expected "identifier"; SQL statement:
+select user0_.user_name as user_nam1_9_0_, user0_.user_first_name as user_fir2_9_0_, user0_.user_last_name as user_las3_9_0_, user0_.user_password as user_pas4_9_0_, role1_.user_id as user_id1_10_1_, role2_.role_name as role_id2_10_1_, role2_.role_name as role_nam1_8_2_, role2_.role_description as role_des2_8_2_ from user user0_ left outer join user_role role1_ on user0_.user_name=role1_.user_id left outer join role role2_ on role1_.role_id=role2_.role_name where user0_.user_name=? [42001-214]
+2022-09-14 01:24:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROLE" not found (this database is empty); SQL statement:
+select role0_.role_name as role_nam1_8_0_, role0_.role_description as role_des2_8_0_ from role role0_ where role0_.role_name=? [42104-214]
+2022-09-14 01:29:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROLE" not found (this database is empty); SQL statement:
+select role0_.role_name as role_nam1_8_0_, role0_.role_description as role_des2_8_0_ from role role0_ where role0_.role_name=? [42104-214]
+2022-09-14 01:30:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROLE" not found (this database is empty); SQL statement:
+select role0_.role_name as role_nam1_8_0_, role0_.role_description as role_des2_8_0_ from role role0_ where role0_.role_name=? [42104-214]
+2022-09-14 01:30:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROLE" not found (this database is empty); SQL statement:
+select role0_.role_name as role_nam1_8_0_, role0_.role_description as role_des2_8_0_ from role role0_ where role0_.role_name=? [42104-214]

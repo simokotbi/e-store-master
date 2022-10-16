@@ -1,0 +1,42 @@
+version: '3.9'
+services:
+  # e-store:
+  #   image: mysql:5.7
+  #   container_name: e-store
+  #   restart: always
+  #   environment:
+  #     MYSQL_DATABASE: 'storedb'
+  #     MYSQL_USER: 'user'
+  #     MYSQL_PASSWORD: 'password'
+  #     MYSQL_ROOT_PASSWORD: 'password'
+  #   ports:
+  #     - '3306:3306'
+  #   expose:
+  #     - '3306'
+  builder:
+        container_name: builder
+        image: maven:3.6.0-jdk-8-slim
+        volumes:
+            - .:/home/app
+        working_dir: /home/app
+        entrypoint: mvn
+        command: 
+            - install
+            - clean
+            - package
+        # depends_on:
+        #     - "e-store"
+  backend:
+        container_name: backend
+        restart: on-failure
+        image: openjdk:8
+        volumes:
+            - .:/home/app
+        working_dir: /home/app/target
+        entrypoint: java
+        command: -jar store-0.0.1-SNAPSHOT.jar
+        ports:
+            - 8080:8080
+        depends_on:
+            # - "e-store"
+            - "builder"
